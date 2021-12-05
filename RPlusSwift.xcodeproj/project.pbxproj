@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073BBE83275CA980001E2B94 /* RPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073BBE82275CA980001E2B94 /* RPlusButton.swift */; };
 		0761C3C92755DCDA00B4C81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0761C3C82755DCDA00B4C81A /* AppDelegate.swift */; };
 		0761C3CB2755DCDA00B4C81A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0761C3CA2755DCDA00B4C81A /* SceneDelegate.swift */; };
 		0761C3CD2755DCDA00B4C81A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0761C3CC2755DCDA00B4C81A /* ViewController.swift */; };
 		0761C3D02755DCDA00B4C81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0761C3CE2755DCDA00B4C81A /* Main.storyboard */; };
 		0761C3D22755DCDC00B4C81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0761C3D12755DCDC00B4C81A /* Assets.xcassets */; };
 		0761C3D52755DCDC00B4C81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0761C3D32755DCDC00B4C81A /* LaunchScreen.storyboard */; };
+		079377E0275604DA00F2D9B1 /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079377DF275604DA00F2D9B1 /* StoreCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		073BBE82275CA980001E2B94 /* RPlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPlusButton.swift; sourceTree = "<group>"; };
 		0761C3C52755DCDA00B4C81A /* RPlusSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPlusSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0761C3C82755DCDA00B4C81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0761C3CA2755DCDA00B4C81A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		0761C3D12755DCDC00B4C81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0761C3D42755DCDC00B4C81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0761C3D62755DCDC00B4C81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079377DF275604DA00F2D9B1 /* StoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		0761C3C72755DCDA00B4C81A /* RPlusSwift */ = {
 			isa = PBXGroup;
 			children = (
+				079377DE275604C300F2D9B1 /* cells */,
 				0761C3C82755DCDA00B4C81A /* AppDelegate.swift */,
 				0761C3CA2755DCDA00B4C81A /* SceneDelegate.swift */,
+				073BBE82275CA980001E2B94 /* RPlusButton.swift */,
 				0761C3CC2755DCDA00B4C81A /* ViewController.swift */,
 				0761C3CE2755DCDA00B4C81A /* Main.storyboard */,
 				0761C3D12755DCDC00B4C81A /* Assets.xcassets */,
@@ -65,6 +71,14 @@
 				0761C3D62755DCDC00B4C81A /* Info.plist */,
 			);
 			path = RPlusSwift;
+			sourceTree = "<group>";
+		};
+		079377DE275604C300F2D9B1 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				079377DF275604DA00F2D9B1 /* StoreCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073BBE83275CA980001E2B94 /* RPlusButton.swift in Sources */,
 				0761C3CD2755DCDA00B4C81A /* ViewController.swift in Sources */,
 				0761C3C92755DCDA00B4C81A /* AppDelegate.swift in Sources */,
 				0761C3CB2755DCDA00B4C81A /* SceneDelegate.swift in Sources */,
+				079377E0275604DA00F2D9B1 /* StoreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Neeshu-Biet.RPlusSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Neeshu-Biet.RPlusSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
